@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "postinstall": "npm run build"
+  },
+  "devDependencies": {
+    "axios": "^0.16.2",
+    "bootstrap": "^4.1.2",
+    "bootstrap-sass": "^3.3.7",
+    "cross-env": "^5.0.1",
+    "jquery": "^3.2.1",
+    "laravel-mix": "^1.7.2",
+    "lodash": "^4.17.4",
+    "vue": "^2.5.7"
+  },
+  "name": "blog",
+  "description": "<p align=\"center\"><img src=\"https://laravel.com/assets/img/components/logo-laravel.svg\"></p>",
+  "version": "1.0.0",
+  "main": "webpack.mix.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "cropperjs": "^1.4.1",
+    "latest-version": "^4.0.0",
+    "moment": "^2.22.2",
+    "vue-croppa": "^1.3.8",
+    "vue-cropperjs": "^2.2.1",
+    "vue-infinite-loading": "^2.3.3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
